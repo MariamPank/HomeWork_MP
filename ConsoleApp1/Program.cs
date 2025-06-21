@@ -193,88 +193,100 @@ namespace ConsoleApp1
 
             //// Task 1 - კალკულატორის ვალიდაცია: კლასში აწყობილ კალკულატორზე დაადეთ ვალიდაციები, ისე რომ შეუძლებელი იყოს არასწორი ინფორმაციის შემოყვანა კონსოლიდან შესაბამის ველებში.
 
-            while (true)
-            {
-                int calc1, calc2;
-                char opr;
+            //while (true)
+            //{
+            //    int calc1, calc2;
+            //    char opr;
 
-                Console.Write("Enter first number: ");
-                while (!int.TryParse(Console.ReadLine(), out calc1))
-                {
-                    Console.Write("Invalid input! Please enter a valid number: ");
-                }
+            //    Console.Write("Enter first number: ");
 
-                Console.Write("Enter second number: ");
-                while (!int.TryParse(Console.ReadLine(), out calc2))
-                {
-                    Console.Write("Invalid input! Please enter a valid number: ");
-                }
+            //    try
+            //    {
+            //        calc1 = int.Parse(Console.ReadLine());
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.Write("Invalid input! Please enter a valid number: ");
+            //        continue;
+            //    }
 
-                Console.Write("Enter operator (+, -, *, /): ");
-                while (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
-                {
-                    Console.Write("Invalid operator! Please enter one of (+, -, *, /): ");
-                }
+            //    while (!int.TryParse(Console.ReadLine(), out calc1))
+            //    {
+            //        Console.Write("Invalid input! Please enter a valid number: ");
+            //    }
 
-                switch (opr)
-                {
-                    case '+': Console.WriteLine(calc1 + calc2); break;
-                    case '-': Console.WriteLine(calc1 - calc2); break;
-                    case '*': Console.WriteLine(calc1 * calc2); break;
-                    case '/':
+            //    Console.Write("Enter second number: ");
+            //    while (!int.TryParse(Console.ReadLine(), out calc2))
+            //    {
+            //        Console.Write("Invalid input! Please enter a valid number: ");
+            //    }
 
-                        if (calc2 == 0)
-                        {
-                            Console.WriteLine("Error: Cannot divide by zero!");
-                        }
-                        else
-                        {
-                            Console.WriteLine((double)calc1 / calc2);
-                        }
-                        break;
-                }
+            //    Console.Write("Enter operator (+, -, *, /): ");
+            //    while (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
+            //    {
+            //        Console.Write("Invalid operator! Please enter one of (+, -, *, /): ");
+            //    }
+
+            //    switch (opr)
+            //    {
+            //        case '+': Console.WriteLine(calc1 + calc2); break;
+            //        case '-': Console.WriteLine(calc1 - calc2); break;
+            //        case '*': Console.WriteLine(calc1 * calc2); break;
+            //        case '/':
+
+            //            if (calc2 == 0)
+            //            {
+            //                Console.WriteLine("Error: Cannot divide by zero!");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine((double)calc1 / calc2);
+            //            }
+            //            break;
+            //    }
 
 
-                Console.Write("Do you want to perform another calculation? (y/n): ");
-                string response = Console.ReadLine();
-                if (response != "y")
-                {
-                    Console.WriteLine("Goodbye!");
-                    break;
-                }
+            //    Console.Write("Press X if you want to quit the application: ");
+            //    string response = Console.ReadLine();
+            //    if (response == "X")
+            //    {
+            //        Console.WriteLine("Goodbye!");
+            //        break;
+            //    }
 
-                Console.WriteLine();
-            }
+            //    Console.WriteLine();
+            //}
 
 
             ////Task 2 - ლოგინის ვალიდაცია: ააწყეთ ლოგინის ფორმა სადაც მომხმარებელს სთხოვთ რომ შემოიყვანოთ email და პაროლი. თქვენი დავალებაა რომ შემოყვანილი email და პროლი იყოს ვალიდური, მაგალითად email შეიცავდეს შესაბამის სიმბოლოებს, და პაროლი შეიცავდეს დიდ/პატარა ასოებს რიცხვებს და სპეციალურ სიმბოლოებს, აპლიკაციის რეალიზება უნდა მოხდეს კონსოლში.
 
 
 
-            string email, password;
+            //string email, password;
 
 
-            Console.WriteLine("Please enter your email: ");
-            email = Console.ReadLine();
+            //Console.WriteLine("Please enter your email: ");
+            //email = Console.ReadLine();
 
-            if (!email.Contains("@") && !email.Contains("."))
-            {
-                Console.WriteLine("Please enter valid email address");
-            }
+            //if (!email.Contains("@") && !email.Contains("."))
+            //{
+            //    Console.WriteLine("Please enter valid email address");
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
 
-                Console.WriteLine("Please enter the password: ");
-                password = Console.ReadLine();
+            //    Console.WriteLine("Please enter the password: ");
+            //    password = Console.ReadLine();
 
-                if (password.Length < 8)
-                {
-                Console.WriteLine("Password should be at least 8 characters");
-            }
+            //    if (password.Length < 8)
+            //    {
+            //    Console.WriteLine("Password should be at least 8 characters");
+            //}
 
 
             #endregion
+
 
             #region ClassWork -  Lesson 5
 
@@ -335,6 +347,158 @@ namespace ConsoleApp1
             //TODO : 5. Print multiplication table for a number (e.g. 2 * 1 = 2, 2 * 2 = 4, ..., 2 * 10 = 20)
 
             #endregion
+
+            #region ClassWork -  Lesson 6
+
+            //while (true)
+            //{
+            //    int calc1, calc2;
+            //    char opr;
+
+            //    Console.Write("Enter first number: ");
+
+            //    try
+            //    {
+            //        calc1 = int.Parse(Console.ReadLine());
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.Write("Invalid input! Please enter a valid number: ");
+            //        continue;
+            //    }
+
+            //    Console.Write("Enter second number: ");
+            //    try
+            //    {
+            //        calc2 = int.Parse(Console.ReadLine());
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.Write("Invalid input! Please enter a valid number: ");
+            //        continue;
+            //    }
+
+            //    Console.Write("Enter operator (+, -, *, /): ");
+
+            //    try 
+            //    { 
+            //        opr = char.Parse(Console.ReadLine());
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.Write("Invalid operator! Please enter one of (+, -, *, /): ");
+            //        continue;
+            //    }
+
+
+            //    //while (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
+            //    //{
+            //    //    Console.Write("Invalid operator! Please enter one of (+, -, *, /): ");
+            //    //}
+
+            //    switch (opr)
+            //    {
+            //        case '+': Console.WriteLine(calc1 + calc2); break;
+            //        case '-': Console.WriteLine(calc1 - calc2); break;
+            //        case '*': Console.WriteLine(calc1 * calc2); break;
+            //        case '/':
+
+            //            if (calc2 == 0)
+            //            {
+            //                Console.WriteLine("Error: Cannot divide by zero!");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine((double)calc1 / calc2);
+            //            }
+            //            break;
+            //    }
+
+
+            //    Console.Write("Press X if you want to quit the application: ");
+            //    string response = Console.ReadLine();
+            //    if (response == "X")
+            //    {
+            //        Console.WriteLine("Goodbye!");
+            //        break;
+            //    }
+
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Homework - Lesson 5
+
+            // Task 1. მომხმარებელს კლავიატურის გამოყენებით შეჰყავს 2 რიცხვი. ჩვენი ამოცანაა, რომ ვაჩვენოთ ყველა
+            // ლუწი რიცხვი მითითებულ დიაპაზონში. თუ დიაპზონის საზღვრები არასწორად არის მოცემული, თქვენ უნდა
+            // ჩაასწოროთ ის.მაგალითად, თუ მომხმარებელმა შეიყვანა 20 და 11, ჩასწორებაა საჭირო, რადგან დიაპაზონის
+            //დასაწყისი უნდა იყოს -11, და დასასრული -20.
+
+            Console.Write("Please enter the first number of the range: ");
+            int numb1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Please enter the last number of the range: ");
+            int numb2 = int.Parse(Console.ReadLine());
+
+
+            if (numb1 > numb2)
+            {
+                int tempNumb = numb1;
+                numb1 = numb2;
+                numb2 = tempNumb;
+
+            }
+            for (int i = numb1; i <= numb2; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            //Task 2. დაწერეთ პროგრამა რომელიც გამოიტანს კონსოლში ფიფქებით შედგენილ ნახევარპირამიდის ფორმას.
+            // მაგალითად ციფრი 4–ის შეყვანისას კონსოლში გამოვა შემდეგი სახის ნახევარ პირამიდა:
+            //*
+            //**
+            //***
+            //****
+
+            Console.WriteLine("Please enter a number: ");
+
+            int newNumb = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= newNumb; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+            //Task 3. დაწერეთ პროგრამა რომელიც კონსოლიდან წაკითხული რიცხვის მიხედვით გამოიტანს ციფრებით გამოსახულ
+            // პირამიდას მაგ: შემოტანილი რიცხვია თუ არის 4, გამოსატან პირამიდას ექნება ასეთი სახე:
+            //1
+            //2 2
+            //3 3 3
+            //4 4 4 4
+
+            Console.WriteLine("Please enter a number: ");
+
+            int nmb = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= nmb; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(i);
+                }
+                Console.WriteLine();
+            }
+
+            #endregion
+
 
         }
     }
