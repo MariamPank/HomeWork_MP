@@ -348,158 +348,142 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region ClassWork -  Lesson 6
-
-            //while (true)
-            //{
-            //    int calc1, calc2;
-            //    char opr;
-
-            //    Console.Write("Enter first number: ");
-
-            //    try
-            //    {
-            //        calc1 = int.Parse(Console.ReadLine());
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        Console.Write("Invalid input! Please enter a valid number: ");
-            //        continue;
-            //    }
-
-            //    Console.Write("Enter second number: ");
-            //    try
-            //    {
-            //        calc2 = int.Parse(Console.ReadLine());
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        Console.Write("Invalid input! Please enter a valid number: ");
-            //        continue;
-            //    }
-
-            //    Console.Write("Enter operator (+, -, *, /): ");
-
-            //    try 
-            //    { 
-            //        opr = char.Parse(Console.ReadLine());
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        Console.Write("Invalid operator! Please enter one of (+, -, *, /): ");
-            //        continue;
-            //    }
-
-
-            //    //while (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
-            //    //{
-            //    //    Console.Write("Invalid operator! Please enter one of (+, -, *, /): ");
-            //    //}
-
-            //    switch (opr)
-            //    {
-            //        case '+': Console.WriteLine(calc1 + calc2); break;
-            //        case '-': Console.WriteLine(calc1 - calc2); break;
-            //        case '*': Console.WriteLine(calc1 * calc2); break;
-            //        case '/':
-
-            //            if (calc2 == 0)
-            //            {
-            //                Console.WriteLine("Error: Cannot divide by zero!");
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine((double)calc1 / calc2);
-            //            }
-            //            break;
-            //    }
-
-
-            //    Console.Write("Press X if you want to quit the application: ");
-            //    string response = Console.ReadLine();
-            //    if (response == "X")
-            //    {
-            //        Console.WriteLine("Goodbye!");
-            //        break;
-            //    }
-
-            //    Console.WriteLine();
-            //}
-            #endregion
-
             #region Homework - Lesson 5
 
-            // Task 1. მომხმარებელს კლავიატურის გამოყენებით შეჰყავს 2 რიცხვი. ჩვენი ამოცანაა, რომ ვაჩვენოთ ყველა
-            // ლუწი რიცხვი მითითებულ დიაპაზონში. თუ დიაპზონის საზღვრები არასწორად არის მოცემული, თქვენ უნდა
-            // ჩაასწოროთ ის.მაგალითად, თუ მომხმარებელმა შეიყვანა 20 და 11, ჩასწორებაა საჭირო, რადგან დიაპაზონის
-            //დასაწყისი უნდა იყოს -11, და დასასრული -20.
+            //// Task 1. მომხმარებელს კლავიატურის გამოყენებით შეჰყავს 2 რიცხვი. ჩვენი ამოცანაა, რომ ვაჩვენოთ ყველა
+            //// ლუწი რიცხვი მითითებულ დიაპაზონში. თუ დიაპზონის საზღვრები არასწორად არის მოცემული, თქვენ უნდა
+            //// ჩაასწოროთ ის.მაგალითად, თუ მომხმარებელმა შეიყვანა 20 და 11, ჩასწორებაა საჭირო, რადგან დიაპაზონის
+            ////დასაწყისი უნდა იყოს -11, და დასასრული -20.
 
-            Console.Write("Please enter the first number of the range: ");
-            int numb1 = int.Parse(Console.ReadLine());
+            //Console.Write("Please enter the first number of the range: ");
+            //int numb1 = int.Parse(Console.ReadLine());
 
-            Console.Write("Please enter the last number of the range: ");
-            int numb2 = int.Parse(Console.ReadLine());
-
-
-            if (numb1 > numb2)
-            {
-                int tempNumb = numb1;
-                numb1 = numb2;
-                numb2 = tempNumb;
-
-            }
-            for (int i = numb1; i <= numb2; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-
-            //Task 2. დაწერეთ პროგრამა რომელიც გამოიტანს კონსოლში ფიფქებით შედგენილ ნახევარპირამიდის ფორმას.
-            // მაგალითად ციფრი 4–ის შეყვანისას კონსოლში გამოვა შემდეგი სახის ნახევარ პირამიდა:
-            //*
-            //**
-            //***
-            //****
-
-            Console.WriteLine("Please enter a number: ");
-
-            int newNumb = int.Parse(Console.ReadLine());
-
-            for (int i = 1; i <= newNumb; i++)
-            {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            //Console.Write("Please enter the last number of the range: ");
+            //int numb2 = int.Parse(Console.ReadLine());
 
 
-            //Task 3. დაწერეთ პროგრამა რომელიც კონსოლიდან წაკითხული რიცხვის მიხედვით გამოიტანს ციფრებით გამოსახულ
-            // პირამიდას მაგ: შემოტანილი რიცხვია თუ არის 4, გამოსატან პირამიდას ექნება ასეთი სახე:
-            //1
-            //2 2
-            //3 3 3
-            //4 4 4 4
+            //if (numb1 > numb2)
+            //{
+            //    int tempNumb = numb1;
+            //    numb1 = numb2;
+            //    numb2 = tempNumb;
 
-            Console.WriteLine("Please enter a number: ");
+            //}
+            //for (int i = numb1; i <= numb2; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
 
-            int nmb = int.Parse(Console.ReadLine());
+            ////Task 2. დაწერეთ პროგრამა რომელიც გამოიტანს კონსოლში ფიფქებით შედგენილ ნახევარპირამიდის ფორმას.
+            //// მაგალითად ციფრი 4–ის შეყვანისას კონსოლში გამოვა შემდეგი სახის ნახევარ პირამიდა:
+            ////*
+            ////**
+            ////***
+            ////****
 
-            for (int i = 1; i <= nmb; i++)
-            {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write(i);
-                }
-                Console.WriteLine();
-            }
+            //Console.WriteLine("Please enter a number: ");
+
+            //int newNumb = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= newNumb; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            ////Task 3. დაწერეთ პროგრამა რომელიც კონსოლიდან წაკითხული რიცხვის მიხედვით გამოიტანს ციფრებით გამოსახულ
+            //// პირამიდას მაგ: შემოტანილი რიცხვია თუ არის 4, გამოსატან პირამიდას ექნება ასეთი სახე:
+            ////1
+            ////2 2
+            ////3 3 3
+            ////4 4 4 4
+
+            //Console.WriteLine("Please enter a number: ");
+
+            //int nmb = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= nmb; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write(i);
+            //    }
+            //    Console.WriteLine();
+            //}
 
             #endregion
 
+            #region Homework -  Lesson 6
 
+            while (true)
+            {
+                int calc1, calc2;
+                char opr;
+
+                try
+                {
+                    Console.WriteLine("Enter first number: ");
+                    if (!int.TryParse(Console.ReadLine(), out calc1))
+                    {
+                        throw new ArgumentException("Invalid input! Please enter a valid number.");
+                    }
+
+                    Console.WriteLine("Enter second number: ");
+                    if (!int.TryParse(Console.ReadLine(), out calc2))
+                    {
+                        throw new ArgumentException("Invalid input! Please enter a valid number.");
+                    }
+
+                    Console.WriteLine("Enter operator (+, -, *, /): ");
+
+                    if (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
+                    {
+                        throw new ArgumentException("Invalid operator! Please enter one of (+, -, *, /): ");
+                    }
+
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("Invalid input! Please enter a valid number: ");
+                    continue;
+                }
+
+                switch (opr)
+                {
+                    case '+': Console.WriteLine(calc1 + calc2); break;
+                    case '-': Console.WriteLine(calc1 - calc2); break;
+                    case '*': Console.WriteLine(calc1 * calc2); break;
+                    case '/':
+
+                        if (calc2 == 0)
+                        {
+                            Console.WriteLine("Error: Cannot divide by zero!");
+                        }
+                        else
+                        {
+                            Console.WriteLine((double)calc1 / calc2);
+                        }
+                        break;
+                }
+
+                Console.Write("Press X if you want to quit the application: ");
+                string response = Console.ReadLine();
+                if (response == "X")
+                {
+                    Console.WriteLine("Goodbye!");
+                    break;
+                }
+
+                Console.WriteLine();
+            }
+            #endregion
         }
     }
 }
