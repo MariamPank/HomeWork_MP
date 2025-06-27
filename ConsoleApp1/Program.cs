@@ -422,66 +422,181 @@ namespace ConsoleApp1
 
             #region Homework -  Lesson 6
 
-            while (true)
+            //while (true)
+            //{
+            //    int calc1, calc2;
+            //    char opr;
+
+            //    try
+            //    {
+            //        Console.WriteLine("Enter first number: ");
+            //        if (!int.TryParse(Console.ReadLine(), out calc1))
+            //        {
+            //            throw new ArgumentException("Invalid input! Please enter a valid number.");
+            //        }
+
+            //        Console.WriteLine("Enter second number: ");
+            //        if (!int.TryParse(Console.ReadLine(), out calc2))
+            //        {
+            //            throw new ArgumentException("Invalid input! Please enter a valid number.");
+            //        }
+
+            //        Console.WriteLine("Enter operator (+, -, *, /): ");
+
+            //        if (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
+            //        {
+            //            throw new ArgumentException("Invalid operator! Please enter one of (+, -, *, /): ");
+            //        }
+
+            //    }
+            //    catch (ArgumentException)
+            //    {
+            //        Console.WriteLine("Invalid input! Please enter a valid number: ");
+            //        continue;
+            //    }
+
+            //    switch (opr)
+            //    {
+            //        case '+': Console.WriteLine(calc1 + calc2); break;
+            //        case '-': Console.WriteLine(calc1 - calc2); break;
+            //        case '*': Console.WriteLine(calc1 * calc2); break;
+            //        case '/':
+
+            //            if (calc2 == 0)
+            //            {
+            //                Console.WriteLine("Error: Cannot divide by zero!");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine((double)calc1 / calc2);
+            //            }
+            //            break;
+            //    }
+
+            //    Console.Write("Press X if you want to quit the application: ");
+            //    string response = Console.ReadLine();
+            //    if (response == "X")
+            //    {
+            //        Console.WriteLine("Goodbye!");
+            //        break;
+            //    }
+
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            # region Classwork - Lesson 7
+
+            //int [] array = [10,5,3,4,2];
+
+            ////for (int i=0; i< array.Length; i++)
+            ////{
+            ////    Console.Write(array[i] + " ");
+            ////}
+
+
+            //Console.WriteLine(array[array.Length - 1]);
+
+
+            //for (int i = 0; i < array.Length - 1; i++)
+
+            //{
+            //    for (int j = i + 1; j < array.Length; j++)
+            //    {
+            //        if (array[i] > array[j])
+            //        {
+            //            int min = array[j];
+            //            array[j] = array[i];
+            //            array[i] = min;
+            //        }
+                    
+            //    }
+            //    Console.Write(array[i] + " ");
+            //}
+
+
+            #endregion
+
+            #region Homework - Lesson 7
+
+
+            int[] arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+            //დაწერეთ კოდი რომელიც გამოთვლის მასივის ელემენტების ჯამს
+
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
             {
-                int calc1, calc2;
-                char opr;
+                sum += arr[i];
+            }
 
-                try
+            Console.WriteLine($"Sum of array elements: {sum}");
+
+
+            //დაწერეთ კოდი რომელიც მოძებმის მასივის ზომას length - ის გამოყენების გარეშე
+
+            int length = 0;
+
+            foreach (var item in arr)
+            {
+                length++;
+            }
+            Console.WriteLine($"Length of array: {length}");
+
+            //დაწერეთ კოდი რომელიც დაბეჭდავს მასივს უკუღმა
+
+            int[] reversedArray = new int[length];
+
+            Console.WriteLine("Array in reverse order: ");
+
+            for (int i = arr.Length - 1; i >= 0; i--)
                 {
-                    Console.WriteLine("Enter first number: ");
-                    if (!int.TryParse(Console.ReadLine(), out calc1))
-                    {
-                        throw new ArgumentException("Invalid input! Please enter a valid number.");
-                    }
-
-                    Console.WriteLine("Enter second number: ");
-                    if (!int.TryParse(Console.ReadLine(), out calc2))
-                    {
-                        throw new ArgumentException("Invalid input! Please enter a valid number.");
-                    }
-
-                    Console.WriteLine("Enter operator (+, -, *, /): ");
-
-                    if (!char.TryParse(Console.ReadLine(), out opr) || (opr != '+' && opr != '-' && opr != '*' && opr != '/'))
-                    {
-                        throw new ArgumentException("Invalid operator! Please enter one of (+, -, *, /): ");
-                    }
-
-                }
-                catch (ArgumentException)
-                {
-                    Console.WriteLine("Invalid input! Please enter a valid number: ");
-                    continue;
+                    Console.Write(arr[i] + " ");
                 }
 
-                switch (opr)
-                {
-                    case '+': Console.WriteLine(calc1 + calc2); break;
-                    case '-': Console.WriteLine(calc1 - calc2); break;
-                    case '*': Console.WriteLine(calc1 * calc2); break;
-                    case '/':
+            Console.WriteLine();
 
-                        if (calc2 == 0)
-                        {
-                            Console.WriteLine("Error: Cannot divide by zero!");
-                        }
-                        else
-                        {
-                            Console.WriteLine((double)calc1 / calc2);
-                        }
+            //დაწერეთ კოდი რომელიც მასივის ყველა ელემენტს გადააკოპირებს მერე მასივში
+
+            int[] copiedArray = new int[length];
+
+            Console.WriteLine($"Copied array: ");
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                copiedArray[i] = arr[i];
+                Console.Write(copiedArray[i] + " ");
+            }
+
+            Console.WriteLine();
+
+            //დაწერეთ კოდი რომელიც მოძებნის მასივის უნიკალურ ელემენტებს
+
+
+            int[] arr1 = [1, 1, 3, 4, 4, 7, 7, 9, 9];
+
+            int uniqueElement;
+
+            uniqueElement = 0;
+
+            Console.WriteLine("Unique elements in the array: ");
+
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                bool isUnique = true;
+                for (int j = 0; j < arr1.Length; j++)
+                {
+                    if (i != j && arr1[i] == arr1[j])
+                    {
+                        isUnique = false;
                         break;
+                    }
                 }
-
-                Console.Write("Press X if you want to quit the application: ");
-                string response = Console.ReadLine();
-                if (response == "X")
+                if (isUnique)
                 {
-                    Console.WriteLine("Goodbye!");
-                    break;
+                    Console.Write(arr1[i] + " ");
+                    uniqueElement++;
                 }
-
-                Console.WriteLine();
             }
             #endregion
         }
