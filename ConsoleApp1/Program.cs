@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
+using System.Globalization;
+using System.Security.Cryptography;
+using System.Xml;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
 {
@@ -6,8 +11,6 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
-
             #region  Homework - Lesson 2
             //Task #1
 
@@ -287,7 +290,6 @@ namespace ConsoleApp1
 
             #endregion
 
-
             #region ClassWork -  Lesson 5
 
 
@@ -485,7 +487,7 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            # region Classwork - Lesson 7
+            #region Classwork - Lesson 7
 
             //int [] array = [10,5,3,4,2];
 
@@ -509,7 +511,7 @@ namespace ConsoleApp1
             //            array[j] = array[i];
             //            array[i] = min;
             //        }
-                    
+
             //    }
             //    Console.Write(array[i] + " ");
             //}
@@ -520,85 +522,558 @@ namespace ConsoleApp1
             #region Homework - Lesson 7
 
 
-            int[] arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            //int[] arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-            //დაწერეთ კოდი რომელიც გამოთვლის მასივის ელემენტების ჯამს
+            ////დაწერეთ კოდი რომელიც გამოთვლის მასივის ელემენტების ჯამს
 
-            int sum = 0;
-            for (int i = 0; i < arr.Length; i++)
+            //int sum = 0;
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    sum += arr[i];
+            //}
+
+            //Console.WriteLine($"Sum of array elements: {sum}");
+
+
+            ////დაწერეთ კოდი რომელიც მოძებმის მასივის ზომას length - ის გამოყენების გარეშე
+
+            //int length = 0;
+
+            //foreach (var item in arr)
+            //{
+            //    length++;
+            //}
+            //Console.WriteLine($"Length of array: {length}");
+
+            ////დაწერეთ კოდი რომელიც დაბეჭდავს მასივს უკუღმა
+
+            //int[] reversedArray = new int[length];
+
+            //Console.WriteLine("Array in reverse order: ");
+
+            //for (int i = arr.Length - 1; i >= 0; i--)
+            //    {
+            //        Console.Write(arr[i] + " ");
+            //    }
+
+            //Console.WriteLine();
+
+            ////დაწერეთ კოდი რომელიც მასივის ყველა ელემენტს გადააკოპირებს მერე მასივში
+
+            //int[] copiedArray = new int[length];
+
+            //Console.WriteLine($"Copied array: ");
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    copiedArray[i] = arr[i];
+            //    Console.Write(copiedArray[i] + " ");
+            //}
+
+            //Console.WriteLine();
+
+            ////დაწერეთ კოდი რომელიც მოძებნის მასივის უნიკალურ ელემენტებს
+
+
+            //int[] arr1 = [1, 1, 3, 4, 4, 7, 7, 9, 9];
+
+            //int uniqueElement;
+
+            //uniqueElement = 0;
+
+            //Console.WriteLine("Unique elements in the array: ");
+
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    bool isUnique = true;
+            //    for (int j = 0; j < arr1.Length; j++)
+            //    {
+            //        if (i != j && arr1[i] == arr1[j])
+            //        {
+            //            isUnique = false;
+            //            break;
+            //        }
+            //    }
+            //    if (isUnique)
+            //    {
+            //        Console.Write(arr1[i] + " ");
+            //        uniqueElement++;
+            //    }
+            //}
+
+            #endregion
+
+            #region Homework - Lesson 8
+
+            //Task1 - Print elements from the array.
+
+            int[] ar = new int[3] { 11, 22, 33 };
+            PrintArray(ar);
+
+            string[] array = ["Daisy", "Marc", "Jacobs", "Dior", "Christian"];
+            PrintArrayString(array);
+
+            //Task2 - Sort the elements of the array in ascending order and print them.
+
+            int[] ar2 = new int[5] { 5, 3, 8, 1, 4 };
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar2);
+
+            Console.WriteLine("Sorted array in ascending order: ");
+            PrintArray(SortAscending(ar2));
+
+            //Task3 - Find the minimum element in the array and print it.
+
+            int[] ar3 = new int[6] { 60, 2, 4, 51, 24, 88 };
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+
+            Console.WriteLine("Minimum element of the array: ");
+            GetMinElement(ar3);
+
+            //Task4 - Find and print the maximum element in the array.
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+
+            Console.WriteLine("Maximum element of the array: ");
+            GetMaxElement(ar3);
+
+            //Task5 – Find and Print the Sum of All Elements:
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+            Console.WriteLine($"Sum of the elements of the array: {GetSumofElements(ar3)}");
+
+            //Task6 – Find and print the Average of Array Elements:
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+            Console.WriteLine($"Average of the elements of the array: {GetAverageOfElements(ar3)}");
+
+            //Task7 – Count and Print Even Numbers in an Array
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+            Console.WriteLine($"Count of even numbers in the array: {CountEvenNumbers(ar3)}");
+
+            //Task8 – Reverse and Print the Array
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+
+            Console.WriteLine("Reversed array: ");
+            PrintArray(ReversedArray(ar3));
+
+            //Task9 – Search for an Element in the Array
+
+
+            Console.Write("Enter a number to search in the array: ");
+            int searchNumber = int.Parse(Console.ReadLine());
+            SearchElement(ar3, searchNumber);
+
+            //Task10 – Replace All Odd Numbers with Zero
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+
+            Console.WriteLine("Array without Odd numbers: ");
+            NewArrayWithOddZeroes(ar3);
+
+            //Task11 – Sort and Print Strings Alphabetically
+
+            Console.WriteLine("Original array: ");
+            PrintArrayString(array);
+
+            SortAlphabetically(array);
+
+            //Task12 – Find the Longest String in the Array
+
+            string[] array2 = ["Balenciaga", "Loewe", "LW", "Dior", "Chanel"];
+
+            Console.WriteLine("Original array: ");
+            PrintArrayString(array2);
+
+            Console.WriteLine($"Longest string in the array: {LongestString(array2)}");
+
+            //Task13 – Copy Array into a New Array
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar2);
+
+            Console.WriteLine("Copied array: ");
+            PrintArray(GetDuplicateArray(ar2));
+
+            //Task14 – Merge Two Arrays into a Single One
+
+            Console.WriteLine("First array: ");
+            PrintArray(ar);
+            Console.WriteLine("Second array: ");
+            PrintArray(ar2);
+            Console.WriteLine($"Merged Array: ");
+            PrintArray(MergeArrays(ar, ar2));
+
+            //Task15 – Count How Many Times a Specific Element Appears in the Array
+
+            // Option 1:
+
+            int[] arr4 = new int[10] { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4 };
+
+            Console.Write("Please insert the number: ");
+            int element = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine($"The number {element} appears {CountElements(arr4, element)} times in the array.");
+
+            // Option 2:
+
+            Console.WriteLine("Original array: ");
+            PrintArray(arr4);
+
+            CountElements2(arr4, element);
+
+            //Task16 – Find the Second Largest Element in the Array
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+
+            GetSecondLargestElement(ar3);
+
+            //Task17 – Remove Duplicates from an Array
+
+            Console.Write("Array before removing duplicates: ");
+            PrintArray(arr4);
+
+            Console.Write("Array after removing duplicates: ");
+            RemoveDuplicates(arr4);
+            Console.WriteLine();
+
+            //Task18 – Print All Unique Elements in an Array
+
+            Console.WriteLine("Original array: ");
+            PrintArray(arr4);
+
+            Console.Write("Unique elements in the array: ");
+            GetOnlyUniqueElemenets(arr4);
+            Console.WriteLine();
+
+            //Task19 – Shift All Elements One Position to the Left
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar);
+
+            ShiftToLeft(ar);
+
+
+            //Task20 – Check if an Array is Sorted in Ascending Order
+
+            Console.WriteLine("Original array: ");
+            PrintArray(ar3);
+            AscendingOrNot(ar3);
+
+
+            #endregion
+        }
+
+        static void PrintArray(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
             {
-                sum += arr[i];
+                Console.Write(array[i] + " ");
             }
+            Console.WriteLine();
 
-            Console.WriteLine($"Sum of array elements: {sum}");
+        }
 
-
-            //დაწერეთ კოდი რომელიც მოძებმის მასივის ზომას length - ის გამოყენების გარეშე
-
-            int length = 0;
-
-            foreach (var item in arr)
+        static void PrintArrayString(string[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
             {
-                length++;
+                Console.Write(array[i] + " ");
             }
-            Console.WriteLine($"Length of array: {length}");
+            Console.WriteLine();
+        }
 
-            //დაწერეთ კოდი რომელიც დაბეჭდავს მასივს უკუღმა
-
-            int[] reversedArray = new int[length];
-
-            Console.WriteLine("Array in reverse order: ");
-
-            for (int i = arr.Length - 1; i >= 0; i--)
+        static int[] SortAscending(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = i + 1; j < array.Length; j++)
                 {
-                    Console.Write(arr[i] + " ");
+                    if (array[i] > array[j])
+                    {
+                        int temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
                 }
+            }
+            return array;
+        }
 
-            Console.WriteLine();
-
-            //დაწერეთ კოდი რომელიც მასივის ყველა ელემენტს გადააკოპირებს მერე მასივში
-
-            int[] copiedArray = new int[length];
-
-            Console.WriteLine($"Copied array: ");
-
-            for (int i = 0; i < arr.Length; i++)
+        static void GetMinElement(int[] array)
+        {
+            int min = array[0];
+            for (int i = 0; i < array.Length; i++)
             {
-                copiedArray[i] = arr[i];
-                Console.Write(copiedArray[i] + " ");
+                if (array[i] < min)
+                {
+                    min = array[i];
+                }
+            }
+            Console.Write($"Minimum element of the array: {min}");
+            Console.WriteLine();
+        }
+
+        static void GetMaxElement(int[] array)
+        {
+            int max = array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > max)
+                {
+                    max = array[i];
+                }
+            }
+            Console.Write($"Maximum element of the array: {max}");
+            Console.WriteLine();
+        }
+
+        static int GetSumofElements(int[] array)
+        {
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            return sum;
+        }
+
+        static decimal GetAverageOfElements(int[] array)
+        {
+            int sum = GetSumofElements(array);
+            return Math.Round((decimal) sum / array.Length, 2);
+        }
+
+        static int CountEvenNumbers(int[] array)
+        {
+            int count = 0;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 != 0)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        static int[] ReversedArray(int[] array)
+        {
+            int[] reversed = new int[array.Length];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                reversed[i] = array[array.Length - 1 - i];
+            }
+            return reversed;
+        }
+
+        static void SearchElement(int[] array, int element)
+        {
+            bool found = false;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] == element)
+                {
+                    found = true;
+                    Console.WriteLine($"Element {element} fount at index {i}");
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine($"Element {element} is not found.");
+            }
+        }
+
+        static void NewArrayWithOddZeroes(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 != 0)
+                {
+                    array[i] = 0;
+                }
+            }
+            PrintArray(array);
+        }
+
+        static void SortAlphabetically(string[] array)
+        {
+            Array.Sort(array);
+            Console.WriteLine("Sorted array in alphabetical order: ");
+            PrintArrayString(array);
+        }
+
+        static string LongestString(string[] array)
+        {
+            int maxLengthIndex = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i].Length >= array[maxLengthIndex].Length)
+                {
+                    maxLengthIndex = i;
+                }
+            }
+            return array[maxLengthIndex];
+        }
+
+        static int[] GetDuplicateArray(int[] array)
+        {
+            int[] DuplArray = new int[array.Length];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                DuplArray[i] = array[i];
+            }
+            return DuplArray;
+        }
+
+        static int[] MergeArrays(int[] array1, int[] array2)
+        {
+            int[] mergedArray = new int[array1.Length + array2.Length];
+            for (int i = 0; i < array1.Length; i++)
+            {
+                mergedArray[i] = array1[i];
+            }
+            ;
+            for (int i = 0; i < array2.Length; i++)
+            {
+                mergedArray[array1.Length + i] = array2[i];
+            }
+            return mergedArray;
+        }
+
+        static int CountElements(int[] array, int element)
+        {
+            int count = 0;
+            for (int i = 0; i < array.Length; ++i)
+            {
+                if (array[i] == element)
+                {
+                    count++;
+                }
             }
 
-            Console.WriteLine();
+            return count;
+        }
 
-            //დაწერეთ კოდი რომელიც მოძებნის მასივის უნიკალურ ელემენტებს
+        static void CountElements2(int[] array, int element)
+        {
+            int count = 0;
+            for (int i = 0; i < array.Length; ++i)
+            {
+                if (array[i] == element)
+                {
+                    count++;
+                }
+            }
 
+            if (count != 0)
+            {
+                Console.WriteLine($"The number {element} appears {count} times in the array.");
+            }
+            else
+            {
+                Console.WriteLine($"The number {element} was not found in the array.");
+            }
+        }
 
-            int[] arr1 = [1, 1, 3, 4, 4, 7, 7, 9, 9];
+        static void GetSecondLargestElement(int[] array)
+        {
+            int firstLargestElement = 0;
+            int secondLargestElement = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > firstLargestElement)
+                {
+                    secondLargestElement = firstLargestElement;
+                    firstLargestElement = array[i];
+                }
+            }
+            Console.WriteLine($"Second Largest element is {secondLargestElement}");
+        }
 
-            int uniqueElement;
+        static void RemoveDuplicates(int[] array)
+        {
+            int[] uniqueArray = new int[array.Length];
 
-            uniqueElement = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (!uniqueArray.Contains(array[i]))
+                {
+                    uniqueArray[i] = array[i];
+                    Console.Write(uniqueArray[i] + " ");
+                }
+            }
+        }
 
-            Console.WriteLine("Unique elements in the array: ");
-
-            for (int i = 0; i < arr1.Length; i++)
+        static void GetOnlyUniqueElemenets(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
             {
                 bool isUnique = true;
-                for (int j = 0; j < arr1.Length; j++)
+
+                for (int j = 0; j < array.Length; j++)
                 {
-                    if (i != j && arr1[i] == arr1[j])
+                    if (i != j && array[i] == array[j])
                     {
                         isUnique = false;
                         break;
                     }
                 }
+
                 if (isUnique)
                 {
-                    Console.Write(arr1[i] + " ");
-                    uniqueElement++;
+                    Console.Write(array[i] + " ");
                 }
             }
-            #endregion
+        }
+
+        static void ShiftToLeft(int[] array)
+        {
+            int firstElement = array[0];
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                array[i] = array[i + 1];
+            }
+            array[array.Length - 1] = firstElement;
+            Console.WriteLine("Array after shifting to the left: ");
+            PrintArray(array);
+        }
+
+        static void AscendingOrNot(int[] array)
+        {
+            bool isAscending = true;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                if (array[i] > array[i + 1])
+                {
+                    isAscending = false;
+                    break;
+                }
+            }
+            if (isAscending)
+            {
+                Console.WriteLine("The array is sorted in ascending order.");
+            }
+            else
+            {
+                Console.WriteLine("The array is not sorted in ascending order.");
+            }
         }
     }
 }
