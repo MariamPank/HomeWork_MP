@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1;
+using ConsoleApp1.Homework_13___Classes;
 using Microsoft.VisualBasic;
 using System;
 using System.Drawing;
@@ -47,7 +48,7 @@ namespace ConsoleApp1
 
             Console.WriteLine(square.Name);
 
-            Rectangle form = new Rectangle("Rect");
+            Rectangl_e form = new Rectangl_e("Rect");
 
             Console.WriteLine(form.Name);
 
@@ -123,89 +124,3 @@ namespace ConsoleApp1
         }
     }
 }
-public class Transport
-{
-    private decimal _speed;
-
-    public decimal Speed
-    {
-        get { return _speed; }
-        set { _speed = value; }
-    }
-
-    public void Move(decimal speed)
-    {
-        Speed = speed;
-        Console.WriteLine($"I'm moving at {speed} km per hour");
-    }
-}
-public class Car : Transport
-{
-    private string _fuelType = "";
-
-    public void Drive(string fuelType)
-    {
-        FuelTupe = fuelType;
-        Console.WriteLine($"I only drive with {fuelType}");
-    }
-
-    public string FuelTupe
-    {
-        get { return _fuelType; }
-        set { _fuelType = value; }
-    }
-}
-public class Shape
-{
-    private string _name;
-
-    public string Name { get { return _name; } set { _name = value; } }
-
-    public Shape(string name)
-    {
-        Name = name;
-    }
-}
-public class Rectangle : Shape
-{
-    public Rectangle(string name) : base(name)
-    {
-
-    }
-}
-public class Printer
-{
-    public void Print(string txt)
-    {
-        Console.WriteLine($"Ordinary Printer {txt}");
-    }
-}
-public class ColorPrinter : Printer
-{
-    public new void Print(decimal numb)
-    {
-        Console.WriteLine($"Color Printer {numb}");
-    }
-}
-public class Animal
-{
-    public virtual void MakeSound()
-    {
-        Console.WriteLine("Animal makes sound");
-    }
-}
-public class Dog : Animal
-{
-    public override void MakeSound()
-    {
-        Console.WriteLine("Dog barks");
-    }
-}
-public class InvalidAgeException : Exception
-{
-    public InvalidAgeException() : base("Age must be at least 18.")
-    {
-    }
-}
-
-
