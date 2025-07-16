@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|c:\\users\\paaank\\desktop\\homework_mp\\homework_14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|solutionrelative:homework_14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|c:\\users\\paaank\\desktop\\homework_mp\\homework_14\\villain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|solutionrelative:homework_14\\villain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|c:\\users\\paaank\\desktop\\homework_mp\\homework_14\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|solutionrelative:homework_14\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|c:\\users\\paaank\\desktop\\homework_mp\\homework_14\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|solutionrelative:homework_14\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|c:\\users\\paaank\\desktop\\homework_mp\\homework_14\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E542C006-3ED1-494C-BF74-C9A658635C1C}|Homework_14\\Homework_14.csproj|solutionrelative:homework_14\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A31CC422-272A-47AE-9F02-2DEDFE804864}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\paaank\\desktop\\homework_mp\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A31CC422-272A-47AE-9F02-2DEDFE804864}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,19 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Game.cs",
+              "RelativeDocumentMoniker": "Homework_14\\Game.cs",
+              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Game.cs",
+              "RelativeToolTip": "Homework_14\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T20:27:09.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Villain.cs",
+              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Villain.cs",
+              "RelativeDocumentMoniker": "Homework_14\\Villain.cs",
+              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Villain.cs",
+              "RelativeToolTip": "Homework_14\\Villain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T20:26:46.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hero.cs",
+              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Hero.cs",
+              "RelativeDocumentMoniker": "Homework_14\\Hero.cs",
+              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Hero.cs",
+              "RelativeToolTip": "Homework_14\\Hero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T20:26:28.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Character.cs",
+              "RelativeDocumentMoniker": "Homework_14\\Character.cs",
+              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Character.cs",
+              "RelativeToolTip": "Homework_14\\Character.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:51:18.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAHoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:50:12.027Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\ConsoleApp1\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\ConsoleApp1\\Program.cs*",
-              "RelativeToolTip": "ConsoleApp1\\Program.cs*",
-              "ViewState": "AgIAAEkDAAAAAAAAAAAgwFgDAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Program.cs",
+              "RelativeDocumentMoniker": "Homework_14\\Program.cs",
+              "ToolTip": "C:\\Users\\Paaank\\Desktop\\HomeWork_MP\\Homework_14\\Program.cs",
+              "RelativeToolTip": "Homework_14\\Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwD8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T12:37:54.681Z",
+              "WhenOpened": "2025-07-10T19:49:22.77Z",
               "EditorCaption": ""
             }
           ]

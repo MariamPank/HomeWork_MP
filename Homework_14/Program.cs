@@ -46,9 +46,21 @@ namespace Homework_14
             //ყველა კლასის კოდი უნდა აკმაყოფილებდეს OOP პრინციპებს.
             //გამოიყენე კომენტარები, სადაც საჭიროა.
 
-            Game game = new Game();
+            //Game game = new Game();
 
-            game.Start();
+            //game.Start();
+
+
+
+            Console.Write("Enter your birthday: ");
+            DateTime birthday = DateTime.Parse(Console.ReadLine());
+            DateTime today = DateTime.Today;
+
+            int age = today.Year - birthday.Year;
+
+            Console.WriteLine($"You are {age} years old.");
+
+
         }
     }
 }
