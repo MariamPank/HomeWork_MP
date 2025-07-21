@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace HomeWork_17
+﻿namespace HomeWork_17
 {
     class Program
     {
