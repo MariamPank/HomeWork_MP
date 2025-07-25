@@ -55,6 +55,12 @@
                 Console.WriteLine($"{student.Name} - {student.Score}");
             }
 
+            //Task1
+            Student.PrintNames(students, student =>
+            Console.WriteLine($"{student.Name}")
+            );
+
+            //Task2
         }
     }
 }

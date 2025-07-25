@@ -91,6 +91,17 @@ namespace HomeWork_18
         }
 
 
+        //Task1
+        public static void PrintNames(List<Student> students, Action<Student> printAction)
+        {
+            foreach (var student in students)
+            {
+                printAction(student);
+            }
+        }
+
+
+
     }
 
 }

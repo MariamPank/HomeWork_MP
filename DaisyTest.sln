@@ -9,11 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_14", "Homework_14\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_16", "HomeWork_16\HomeWork_16.csproj", "{2E351B51-BC3F-417F-82F1-A1757161475D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_17", "HomeWork_17\HomeWork_17.csproj", "{182B1C48-2285-4934-AB83-D4235D9EEA4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_18", "HomeWork_17\HomeWork_18.csproj", "{182B1C48-2285-4934-AB83-D4235D9EEA4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassWork", "ClassWork\ClassWork.csproj", "{5C287CAD-1A1D-4ED0-A2D6-4123B240F1CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_18", "HomeWork_18\HomeWork_18.csproj", "{FDCF2263-AB80-46B9-B056-DC8BDE747CB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_19", "HomeWork_18\HomeWork_19.csproj", "{FDCF2263-AB80-46B9-B056-DC8BDE747CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_20", "HomeWork_20\HomeWork_20.csproj", "{F0C2647B-1572-4F39-8D80-485BA7BD310C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FDCF2263-AB80-46B9-B056-DC8BDE747CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDCF2263-AB80-46B9-B056-DC8BDE747CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDCF2263-AB80-46B9-B056-DC8BDE747CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C2647B-1572-4F39-8D80-485BA7BD310C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C2647B-1572-4F39-8D80-485BA7BD310C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C2647B-1572-4F39-8D80-485BA7BD310C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C2647B-1572-4F39-8D80-485BA7BD310C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
